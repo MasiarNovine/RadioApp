@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    Declares support for Android Automotive OS,
+    any hardware/software feature would be defined
+    here see:
+    https://developer.android.com/guide/topics/manifest/uses-feature-element
+    -->
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.audio.output"
+        android:required="false" />
+
+
+    <application
+        android:allowBackup="true"
+        android:appCategory="audio"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RadioApp" />
+
+</manifest>
